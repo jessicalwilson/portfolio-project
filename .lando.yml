@@ -1,0 +1,35 @@
+name: jessica-wilson-portfolio
+recipe: pantheon
+config:
+  framework: wordpress
+  site: jessica-wilson-portfolio
+  id: d57193b8-ba70-4027-ae4f-b3e48a357143
+colab:
+  lando: 3.0.0-rc-12
+  recipe: pantheon
+  framework: wordpress
+  version: 1.0.1
+proxy:
+  node:
+    - sync-jessica-wilson-portfolio.lndo.site:3000
+services:
+  node:
+    type: node:custom
+    ssl: true
+    overrides:
+      ports:
+        - "3000"
+      image: colab/buildtools:node-8
+tooling:
+  gulp:
+    service: node
+    description: 'Runs gulp'
+    cmd: gulp
+  npm:
+    service: node
+    description: 'Runs npm'
+    cmd: npm
+  watch:
+    service: node
+    description: 'Runs gulp watch'
+    cmd: cd $LANDO_MOUNT/wp-contet/themes/example/ && npm run watch
