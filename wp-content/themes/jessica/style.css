@@ -5,3 +5,64 @@
     Description: A custom theme for WordPress.
     Text Domain: jessica
 */
+body {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 20px;
+}
+
+.content {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header__header {
+    display: flex;
+}
+
+.header__heading {
+    margin-left: 10%;
+}
+
+.home-image {
+    background-position: center;
+    background-color: pink;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header-menu {
+    position: absolute;
+    right: 10%;
+}
+
+#header-menu-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-item {
+    margin: 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+}
+
+.footer {
+    margin: 100px 10% 0 10%;
+    display: flex;
+}
+
+.footer p {
+    padding: 25px;
+}

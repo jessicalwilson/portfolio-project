@@ -6,7 +6,6 @@
                 <article class="article">
                     <header class="article__header">
                         <h1 class="article__heading">
-                            [page]
                             <?php the_title(); ?>
                         </h1>
                     </header>
@@ -27,6 +26,6 @@
             </article>
         <?php endif; ?>
     </main>
+    <?php get_sidebar(); ?>
 </section>
-<?php get_sidebar(); ?>
 <?php get_footer();
