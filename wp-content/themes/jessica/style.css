@@ -1,89 +1,89 @@
 /*
-    Theme Name:  Jessica
-    Version:     1.0.0
-    Author:      Jessica Wilson
-    Description: A custom theme for WordPress.
-    Text Domain: jessica
+	Theme Name:  Jessica
+	Version:     1.0.0
+	Author:      Jessica Wilson
+	Description: A custom theme for WordPress.
+	Text Domain: jessica
 */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: 'BenchNine', sans-serif;
-    font-size: 20px;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 20px;
 }
 
 .content {
-    max-width: 70vw;
-    margin: 0 auto;
+	max-width: 70vw;
+	margin: 0 auto;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 .header__header {
-    display: flex;
+	display: flex;
 }
 
 .header__heading {
-    margin-left: 10%;
+	margin-left: 10%;
 }
 
 .home-image {
-    background: no-repeat 50% 50% #ccc;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    color: white;
+	background: no-repeat 50% 50% #ccc;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	color: white;
 }
 
 #header-menu {
-    position: absolute;
-    right: 10%;
+	position: absolute;
+	right: 10%;
 }
 
 #header-menu-list {
-    display: flex;
-    list-style-type: none;
+	display: flex;
+	list-style-type: none;
 }
 
 .menu-item {
-    margin: 20px;
+	margin: 20px;
 }
 
 .menu-item a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .footer {
-    margin: 100px 10% 0 10%;
-    display: flex;
+	margin: 100px 10% 0 10%;
+	display: flex;
 }
 
 .footer p {
-    padding: 25px;
+	padding: 25px;
 }
 
 .gallery {}
 
 .gallery__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style: none;
 }
 
 .gallery__list-item {
-    width: 45%;
-    padding: 20px;
-    border: 1px solid pink;
+	width: 45%;
+	padding: 20px;
+	border: 1px solid pink;
 }
 
 .gallery__list-item img {
