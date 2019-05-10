@@ -6,8 +6,8 @@
     $front_gallery = get_field('front_gallery');
     ?>
 
-    <div class="home-image" style="background-image: url(<?php echo wp_get_attachment_image_url($hero_image['id'], 'large'); ?>);">some shit</div>
-
+    <div class="home-image" style="background-image: url(<?php echo wp_get_attachment_image_url($hero_image['id'], 'large'); ?>);"></div>
+    <h2>About</h2>
     <?php if ($about_biography): ?>
         <div class="about">
             <?php echo $about_biography; ?>
