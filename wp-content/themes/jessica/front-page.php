@@ -6,16 +6,16 @@
 	$front_gallery = get_field('front_gallery');
 	?>
 
-	<div class="home-image" style="background-image: url(<?php echo wp_get_attachment_image_url($hero_image['id'], 'large'); ?>);"></div>
-	<h2>About</h2>
-	<?php if ($about_biography): ?>
-		<div class="about">
-			<?php echo $about_biography; ?>
-		</div>
-	<?php endif; ?>
+	<section class="home-image">
+		<?php
+			$hero_image = get_field('hero_image');
+			if( !empty($hero_image) ): ?>
+				<img src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>" />
+		<?php endif; ?>
+	</section>
 
-	<?php if ($front_gallery): ?>
-		<section class="gallery">
+	<section class="gallery">
+		<?php if ($front_gallery): ?>
 			<ul class="gallery__list">
 				<?php foreach ($front_gallery as $front_gallery_key => $front_gallery_value): ?>
 					<li class="gallery__list-item">
@@ -24,9 +24,21 @@
 					</li>
 				<?php endforeach; ?>
 			</ul>
-		</section>
-	<?php endif; ?>
-	<?php
-	?>
+		<?php endif; ?>
+	</section>
+
+	<section id="about">
+		<h2>About</h2>
+		<?php if ($about_biography): ?>
+			<div class="about">
+				<?php echo $about_biography; ?>
+			</div>
+		<?php endif; ?>
+	</section>
+
+	<section id="contact">
+		<h2>Contact</h2>
+		<?php echo gravity_form( 1, false, false, false, '', false ); ?>
+	</section>
 </main>
 <?php get_footer();
