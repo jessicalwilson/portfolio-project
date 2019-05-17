@@ -43,11 +43,11 @@
 						'container_id'    => 'header-menu',
 						'menu_id'         => 'header-menu-list',
 						'container_class' => 'menu horizontal',
-						'menu_class'      => 'contain',
+						'menu_class'      => 'header__menu-list',
 					));
 				else :
 					wp_page_menu(array(
-						'menu_class' => 'menu horizontal',
+						'menu_class' => 'header__menu',
 						'show_home'  => true,
 						'depth'      => 0,
 					));
