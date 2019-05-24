@@ -18,40 +18,37 @@
 <body class="<?php echo implode(' ', get_body_class()); ?>">
 
 	<div id="top"><!-- Closes in footer.php -->
-
-		<section class="header">
-			<header class="header__header">
-				<h1 class="header__heading">
-					<?php if (is_front_page()) : ?>
+		<header class="header">
+			<h1 class="header__heading">
+				<?php if (is_front_page()) : ?>
+					<?php bloginfo('name'); ?>
+				<?php else : ?>
+					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 						<?php bloginfo('name'); ?>
-					<?php else : ?>
-						<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-							<?php bloginfo('name'); ?>
-						</a>
-					<?php endif; ?>
-				</h1>
-
-				<?php if (get_bloginfo('description')) : ?>
-					<h2 class="header__description"><?php bloginfo('description'); ?></h2>
+					</a>
 				<?php endif; ?>
+			</h1>
 
-				<?php
-				if (has_nav_menu('header')) :
-					wp_nav_menu(array(
-						'container'       => 'nav',
-						'theme_location'  => 'header',
-						'container_id'    => 'header-menu',
-						'menu_id'         => 'header-menu-list',
-						'container_class' => 'menu horizontal',
-						'menu_class'      => 'header__menu-list',
-					));
-				else :
-					wp_page_menu(array(
-						'menu_class' => 'header__menu',
-						'show_home'  => true,
-						'depth'      => 0,
-					));
-				endif;
-				?>
-			</header>
-		</section>
+			<?php if (get_bloginfo('description')) : ?>
+				<h2 class="header__description"><?php bloginfo('description'); ?></h2>
+			<?php endif; ?>
+
+			<?php
+			if (has_nav_menu('header')) :
+				wp_nav_menu(array(
+					'container'       => 'nav',
+					'theme_location'  => 'header',
+					'container_id'    => 'header-menu',
+					'menu_id'         => 'header-menu-list',
+					'container_class' => 'menu horizontal',
+					'menu_class'      => 'header__menu-list',
+				));
+			else :
+				wp_page_menu(array(
+					'menu_class' => 'header__menu',
+					'show_home'  => true,
+					'depth'      => 0,
+				));
+			endif;
+			?>
+		</header>
