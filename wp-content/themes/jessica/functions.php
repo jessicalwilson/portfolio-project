@@ -21,13 +21,7 @@ add_action('init', function () {
 });
 
 function custom_wp_enqueue_scripts() {
-	wp_register_style('google-font-benchnine', 'https://fonts.googleapis.com/css?family=BenchNine:300,700');
-	wp_enqueue_style('google-font-benchnine');
-
-	wp_register_style('style', get_theme_file_uri('/style.css'));
-	wp_enqueue_style('style');
-
-	// wp_register_style('home', get_theme_file_uri('/public/styles/home.css'));
-	// wp_enqueue_style('home');
+	wp_enqueue_style('google-font-benchnine', 'https://fonts.googleapis.com/css?family=BenchNine:300,700');
+	wp_enqueue_style('app', get_theme_file_uri('/dist/app.css'));
 }
 add_action('wp_enqueue_scripts', 'custom_wp_enqueue_scripts');
