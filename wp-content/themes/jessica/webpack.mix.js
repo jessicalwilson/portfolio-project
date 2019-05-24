@@ -12,10 +12,22 @@ const mix = require('laravel-mix');
  */
 
 mix
-    .js('src/app.js', 'dist/')
-    .sass('src/app.scss', 'dist/')
-    // .browserSync('jessica-wilson-portfolio.lndo.site')
-    ;
+	.js('src/app.js', 'dist/')
+	.sass('src/app.scss', 'dist/')
+	.browserSync({
+		host: 'jessica-wilson-portfolio.lndo.site',
+		open: false,
+		// proxy: {
+		//     target: 'appserver_nginx'
+		// },
+		// proxy: 'appserver_nginx.jessica-wilson-portfolio.internal',
+		proxy: 'jessica-wilson-portfolio.lndo.site',
+		socket: {
+			domain: 'sync-jessica-wilson-portfolio.lndo.site',
+			port: 80
+		},
+		ui: false
+	});
 
 // Full API
 // mix.js(src, output);
