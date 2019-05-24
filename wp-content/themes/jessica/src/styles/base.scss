@@ -6,7 +6,7 @@
 
 html,
 body {
-    min-width: 320px;
+	min-width: 320px;
 }
 
 body {
@@ -17,17 +17,17 @@ body {
 
 section {
 
-    & + & {
-        margin-top: 10%;
-    }
+	& + & {
+		margin-top: 10%;
+	}
 }
 
 a {
-    color: black;
+	color: black;
 
-    &:visited {
-        color: black;
-    }
+	&:visited {
+		color: black;
+	}
 }
 
 img {
