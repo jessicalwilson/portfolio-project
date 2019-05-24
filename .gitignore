@@ -16,7 +16,6 @@ sitemap.xml
 sitemap.xml.gz
 *.log
 
-
 # @TODO writable paths
 wp-content/cache/
 wp-content/backups/
@@ -49,6 +48,7 @@ pantheon.upstream.yml
 .DS_Store*
 ehthumbs.db
 Icon?
+!icons/
 Thumbs.db
 ._*
 
