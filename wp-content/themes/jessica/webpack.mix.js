@@ -12,10 +12,10 @@ const mix = require('laravel-mix');
  */
 
 mix
-    .js('src/app.js', 'dist/')
-    .sass('src/app.scss', 'dist/')
-    // .browserSync('jessica-wilson-portfolio.lndo.site')
-    ;
+	.js('src/app.js', 'dist/')
+	.sass('src/app.scss', 'dist/')
+	// .browserSync('jessica-wilson-portfolio.lndo.site')
+	;
 
 // Full API
 // mix.js(src, output);

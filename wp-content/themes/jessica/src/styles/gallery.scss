@@ -7,16 +7,19 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	list-style: none;
+	padding: 0;
 }
 
-.gallery__list-item {
-	width: 45%;
-	padding: 20px;
-}
+@media (min-width: 768px) {
+	.gallery__list-item {
+		width: 45%;
+		padding: 20px;
+	}
 
-.gallery__list-item {
+	.gallery__list-item {
 
-    &:nth-child(even) {
-        margin-top: 10%;
-    }
+		&:nth-child(even) {
+			margin-top: 10%;
+		}
+	}
 }
