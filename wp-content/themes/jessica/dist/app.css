@@ -9,9 +9,19 @@ body {
   min-width: 320px;
 }
 
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 22px;
+  }
+}
+
 body {
-  font-family: "BenchNine", sans-serif;
-  font-size: 20px;
   margin: 0;
 }
 
@@ -49,11 +59,12 @@ img {
 
 .header-menu {
   margin-bottom: 1em;
+  font-size: 20px;
 }
 
 .header__heading {
   margin: 25px 0 0 0;
-  font-size: 60px;
+  font-size: 2.7272727273rem;
   text-align: center;
   /*@media (min-width: 480px) {
   	float: left;
@@ -69,7 +80,6 @@ img {
   justify-content: center;
   margin: 0;
   padding: 0;
-  font-size: 25px;
   list-style-type: none;
   /*@media (min-width: 1440px) {
   	display: block;
@@ -113,6 +123,7 @@ img {
 
 .gallery {
   margin-top: 10vw;
+  font-size: 16px;
 }
 
 .gallery__list {

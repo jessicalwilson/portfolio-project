@@ -38,15 +38,9 @@
 					'container'       => 'nav',
 					'theme_location'  => 'header',
 					'container_id'    => 'header-menu',
+					'container_class' => 'header-menu',
 					'menu_id'         => 'header-menu-list',
-					'container_class' => 'menu horizontal',
 					'menu_class'      => 'header__menu-list',
-				));
-			else :
-				wp_page_menu(array(
-					'menu_class' => 'header__menu',
-					'show_home'  => true,
-					'depth'      => 0,
 				));
 			endif;
 			?>

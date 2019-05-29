@@ -1,0 +1,5 @@
+# no diff of compiled files
+/dist/**/* -diff
+
+# auto merge compiled files
+/dist/**/* merge=ours
