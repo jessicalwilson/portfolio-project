@@ -23,13 +23,17 @@ services:
 tooling:
   gulp:
     service: node
-    description: 'Runs gulp'
+    description: 'Runs gulp commands'
     cmd: gulp
   npm:
     service: node
-    description: 'Runs npm'
+    description: 'Runs npm commands'
     cmd: npm
-  watch:
+  xwatch:
     service: node
     description: 'Runs gulp watch'
     cmd: cd $LANDO_MOUNT/wp-contet/themes/example/ && npm run watch
+  yarn:
+    service: node
+    description: 'Runs yarn commands'
+    cmd: yarn
