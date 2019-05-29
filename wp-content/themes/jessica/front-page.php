@@ -27,16 +27,14 @@
 		<?php endif; ?>
 	</section>
 
-	<section id="about">
+	<section id="about" class="about">
 		<h2>About</h2>
 		<?php if ($about_biography): ?>
-			<div class="about">
-				<?php echo $about_biography; ?>
-			</div>
+			<?php echo $about_biography; ?>
 		<?php endif; ?>
 	</section>
 
-	<section id="contact">
+	<section id="contact" class="contact">
 		<h2>Contact</h2>
 		<?php echo gravity_form( 1, false, false, false, '', false ); ?>
 	</section>
