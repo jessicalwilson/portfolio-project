@@ -22,6 +22,7 @@ add_action('init', function () {
 
 function custom_wp_enqueue_scripts() {
 	wp_enqueue_style('google-font-lato', 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap');
+	wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css');
 	wp_enqueue_style('app', get_theme_file_uri('/dist/app.css'));
 }
 add_action('wp_enqueue_scripts', 'custom_wp_enqueue_scripts');

@@ -8,7 +8,6 @@
 	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
 
 	<link rel="pingback" href="<?php echo get_bloginfo( 'pingback_url' ); ?>">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 	<!-- bof wp_head -->
 	<?php wp_head(); ?>
