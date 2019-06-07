@@ -20,32 +20,34 @@
 		<?php $hero_image = get_field('hero_image'); ?>
 
 		<header class="header"<?php echo isset($hero_image) ? sprintf(' style="background-image: url(%s);"', $hero_image) : ''; ?>>
-			<h1 class="header__heading">
-				<?php if (is_front_page()) : ?>
-					<span>
-						<?php bloginfo('name'); ?>
-					</span>
-				<?php else : ?>
-					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-						<?php bloginfo('name'); ?>
-					</a>
+			<div class="header__wrapper">
+				<h1 class="header__heading">
+					<?php if (is_front_page()) : ?>
+						<span>
+							<?php bloginfo('name'); ?>
+						</span>
+					<?php else : ?>
+						<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+							<?php bloginfo('name'); ?>
+						</a>
+					<?php endif; ?>
+				</h1>
+
+				<?php if (get_bloginfo('description')) : ?>
+					<h2 class="header__description"><?php bloginfo('description'); ?></h2>
 				<?php endif; ?>
-			</h1>
 
-			<?php if (get_bloginfo('description')) : ?>
-				<h2 class="header__description"><?php bloginfo('description'); ?></h2>
-			<?php endif; ?>
-
-			<?php
-			if (has_nav_menu('header')) :
-				wp_nav_menu(array(
-					'container'       => 'nav',
-					'theme_location'  => 'header',
-					'container_id'    => 'header-menu',
-					'container_class' => 'header-menu',
-					'menu_id'         => 'header-menu-list',
-					'menu_class'      => 'header__menu-list',
-				));
-			endif;
-			?>
+				<?php
+				if (has_nav_menu('header')) :
+					wp_nav_menu(array(
+						'container'       => 'nav',
+						'theme_location'  => 'header',
+						'container_id'    => 'header-menu',
+						'container_class' => 'header-menu',
+						'menu_id'         => 'header-menu-list',
+						'menu_class'      => 'header__menu-list',
+					));
+				endif;
+				?>
+			</div>
 		</header>
