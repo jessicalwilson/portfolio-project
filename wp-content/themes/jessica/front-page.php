@@ -18,7 +18,7 @@
 		<?php if ($front_gallery): ?>
 			<ul class="gallery__list">
 				<?php foreach ($front_gallery as $front_gallery_key => $front_gallery_value): ?>
-					<li class="gallery__list-item">
+					<li class="gallery__list-item" data-aos="fade-up">
 						<?php echo wp_get_attachment_image($front_gallery_value['id'], 'large'); ?>
 						<?php echo apply_filters('the_content', wp_get_attachment_caption($front_gallery_value['id'])); ?>
 					</li>
