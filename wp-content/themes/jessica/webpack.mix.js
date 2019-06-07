@@ -12,8 +12,8 @@ const mix = require('laravel-mix');
  */
 
 mix
-	.js('src/app.js', 'dist/')
-	.sass('src/app.scss', 'dist/')
+	.js('src/scripts/app.js', 'dist/')
+	.sass('src/styles/app.scss', 'dist/')
 	.browserSync({
 		host: 'jessica-wilson-portfolio.lndo.site',
 		open: false,

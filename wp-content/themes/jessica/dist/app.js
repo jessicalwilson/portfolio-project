@@ -86,21 +86,22 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/***/ "./src/scripts/app.js":
+/*!****************************!*\
+  !*** ./src/scripts/app.js ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+// import AOS from 'aos';
+AOS.init();
 
 /***/ }),
 
-/***/ "./src/app.scss":
-/*!**********************!*\
-  !*** ./src/app.scss ***!
-  \**********************/
+/***/ "./src/styles/app.scss":
+/*!*****************************!*\
+  !*** ./src/styles/app.scss ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -109,14 +110,14 @@
 /***/ }),
 
 /***/ 0:
-/*!*****************************************!*\
-  !*** multi ./src/app.js ./src/app.scss ***!
-  \*****************************************/
+/*!********************************************************!*\
+  !*** multi ./src/scripts/app.js ./src/styles/app.scss ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /app/wp-content/themes/jessica/src/app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! /app/wp-content/themes/jessica/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /app/wp-content/themes/jessica/src/scripts/app.js */"./src/scripts/app.js");
+module.exports = __webpack_require__(/*! /app/wp-content/themes/jessica/src/styles/app.scss */"./src/styles/app.scss");
 
 
 /***/ })
