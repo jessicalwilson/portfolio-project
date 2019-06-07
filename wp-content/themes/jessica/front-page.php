@@ -1,18 +1,9 @@
 <?php get_header(); ?>
 <main class="content">
 	<?php
-	$hero_image = get_field('hero_image');
 	$about_biography = get_field('about_biography');
 	$front_gallery = get_field('front_gallery');
 	?>
-
-	<section class="home-image">
-		<?php
-			$hero_image = get_field('hero_image');
-			if( !empty($hero_image) ): ?>
-				<img src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>" />
-		<?php endif; ?>
-	</section>
 
 	<section class="gallery">
 		<?php if ($front_gallery): ?>

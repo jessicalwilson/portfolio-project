@@ -32,11 +32,11 @@ section {
 }
 
 a {
-	color: black;
+	color: inherit;
 
-	&:visited {
-		color: black;
-	}
+	// &:visited {
+	// 	color: black;
+	// }
 }
 
 img {
@@ -44,4 +44,12 @@ img {
 	height: auto;
 	display: block;
 	box-shadow: 3px 3px 20px 10px rgba(0,0,0,0.3);
+}
+
+:first-child {
+	margin-top: 0;
+}
+
+:last-child {
+	margin-bottom: 0;
 }
