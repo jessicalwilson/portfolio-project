@@ -63,8 +63,8 @@ img {
 .header {
   height: 100vh;
   color: white;
-  background: no-repeat;
-  background-size: cover 50%;
+  background: no-repeat 50%;
+  background-size: cover;
   background-position-y: 25%;
 }
 
