@@ -64,7 +64,7 @@ img {
   height: 100vh;
   color: white;
   background: no-repeat;
-  background-size: cover;
+  background-size: cover 50%;
   background-position-y: 25%;
 }
 
