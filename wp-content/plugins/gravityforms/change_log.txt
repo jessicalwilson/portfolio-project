@@ -1,6 +1,10 @@
-
-### 2.4.9.1
-- Updates default scroll positions to display the error or confirmation message for AJAX forms.
+### 2.4.10 | 2019-06-12
+- Added the Form block to the editor.
+- Updated the default scroll positions to display the error or confirmation message for AJAX forms.
+- Updated the credit card field so, like other pricing fields, it is not editable on the entry detail page.
+- Fixed a database error when getting REST API keys on a sub-site of a WordPress multi-site installation.
+- Fixed the credit card type value being lost when the entry is updated from the entry detail page.
+- Fixed a fatal error which occurs when using the widget_title filter with two or three arguments.
 
 
 ### 2.4.9 | 2019-05-08
@@ -8,7 +12,7 @@
 - Added accessibility enhancements to the date picker in the date field.
 - Added additional information to logging messages for notifications email sending.
 - Added $format parameter to *[gform_merge_tag_filter](https://docs.gravityforms.com/gform_merge_tag_filter/)* filter.
-- Added *gform_file_upload_status_markup](https://docs.gravityforms.com/gform_file_upload_status_markup/)* filter to allow modifying file upload markup while it is being uploaded.
+- Added *[gform_file_upload_status_markup](https://docs.gravityforms.com/gform_file_upload_status_markup/)* filter to allow modifying file upload markup while it is being uploaded.
 - Updated created_by entry property to save as an empty value when undefined.
 - Updated Chosen.js to v1.8.7.
 - Updated the source URL to account for query strings in URLs.
