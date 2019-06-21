@@ -11,7 +11,7 @@ body {
 
 html {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
   scroll-behavior: smooth;
 }
@@ -38,7 +38,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  box-shadow: 3px 3px 20px 10px rgba(0, 0, 0, 0.3);
 }
 
 :first-child {
@@ -47,6 +46,12 @@ img {
 
 :last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .wysiwyg {
+    padding: 0 4vw;
+  }
 }
 
 .content {
@@ -70,15 +75,14 @@ img {
 .header__heading {
   font-size: 2em;
   line-height: normal;
-  text-align: center;
   margin-bottom: 0;
   padding-top: 10px;
-  padding-left: 5%;
+  padding-left: 15px;
 }
 
 @media (min-width: 500px) {
   .header__heading {
-    text-align: left;
+    padding-left: 10%;
   }
 }
 
@@ -90,12 +94,17 @@ img {
 
 .header-menu {
   font-size: 1em;
-  padding-left: 5%;
+}
+
+@media (min-width: 500px) {
+  .header-menu {
+    margin-left: 20px;
+  }
 }
 
 .header__menu-list {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin: 0;
   margin-top: -8px;
   padding: 0;
@@ -183,6 +192,57 @@ img {
 @media (max-width: 767px) {
   .gallery__list-item + .gallery__list-item {
     margin-top: 3em;
+  }
+}
+
+.gfield_error {
+  border: none !important;
+  background-color: inherit !important;
+}
+
+.gform_wrapper .gfield_error .gfield_label,
+.gform_wrapper .validation_message,
+.gform_wrapper .gfield_required,
+.gform_wrapper li.gfield_error div.ginput_complex.ginput_container label {
+  color: #f22613 !important;
+}
+
+.gform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+.gform_wrapper li.gfield_error textarea,
+.gform_wrapper div.validation_error {
+  border-color: #f22613 !important;
+}
+
+.gform_wrapper div.validation_error {
+  background-color: rgba(242, 38, 19, 0.3);
+  color: black !important;
+  border: 2px solid !important;
+}
+
+.gform_wrapper .gform_footer input.button,
+.gform_wrapper .gform_footer input[type=submit],
+.gform_wrapper .gform_page_footer input.button,
+.gform_wrapper .gform_page_footer input[type=submit] {
+  font-family: "Lato", sans-serif;
+  background: #eee;
+  border: 0;
+  border-radius: 3px;
+  padding: 0.5em 0.75em;
+}
+
+input,
+textarea.medium {
+  border: 2px solid #eeeeee;
+  border-radius: 3px;
+}
+
+@media (min-width: 1024px) {
+  .gform_body {
+    padding: 0 4vw;
+  }
+
+  .gform_wrapper .gform_footer {
+    padding-left: 4vw !important;
   }
 }
 

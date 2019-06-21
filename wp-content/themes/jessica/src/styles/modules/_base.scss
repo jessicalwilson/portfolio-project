@@ -11,7 +11,7 @@ body {
 
 html {
 	font-family: 'Lato', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.8;
 	scroll-behavior: smooth;
 
@@ -43,7 +43,6 @@ img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-	box-shadow: 3px 3px 20px 10px rgba(0,0,0,0.3);
 }
 
 :first-child {
@@ -52,4 +51,10 @@ img {
 
 :last-child {
 	margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+	.wysiwyg {
+		padding: 0 4vw;
+	}
 }

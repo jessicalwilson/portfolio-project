@@ -5,7 +5,7 @@
 	$front_gallery = get_field('front_gallery');
 	?>
 
-	<section class="gallery">
+	<section id="gallery" class="gallery">
 		<?php if ($front_gallery): ?>
 			<ul class="gallery__list">
 				<?php foreach ($front_gallery as $front_gallery_key => $front_gallery_value): ?>
@@ -20,9 +20,11 @@
 
 	<section id="about" class="about">
 		<h2>About</h2>
+		<div class="wysiwyg">
 		<?php if ($about_biography): ?>
 			<?php echo $about_biography; ?>
 		<?php endif; ?>
+		</div>
 	</section>
 
 	<section id="contact" class="contact">
