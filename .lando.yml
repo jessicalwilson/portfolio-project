@@ -1,8 +1,8 @@
-name: jessica-wilson-portfolio
+name: misstesterfield
 recipe: pantheon
 config:
   framework: wordpress
-  site: jessica-wilson-portfolio
+  site: misstesterfield
   id: aa71d241-596e-4bef-8708-cddb118ec6bb
 colab:
   lando: 3.0.0-rc-12
@@ -11,7 +11,7 @@ colab:
   version: 1.0.1
 proxy:
   node:
-    - sync-jessica-wilson-portfolio.lndo.site:3000
+    - sync-misstesterfield.lndo.site:3000
 services:
   node:
     type: node:custom
