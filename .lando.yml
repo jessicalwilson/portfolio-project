@@ -3,7 +3,7 @@ recipe: pantheon
 config:
   framework: wordpress
   site: jessica-wilson-portfolio
-  id: aa71d241-596e-4bef-8708-cddb118ec6bb
+  id: d57193b8-ba70-4027-ae4f-b3e48a357143
 colab:
   lando: 3.0.0-rc-12
   recipe: pantheon
