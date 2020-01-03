@@ -1,9 +1,9 @@
-name: miss-testerfield
+name: jessica-wilson-portfolio
 recipe: pantheon
 config:
   framework: wordpress
-  site: miss-testerfield
-  id: b5c55cd3-cf6a-4380-b95d-5671b8c1e57a
+  site: jessica-wilson-portfolio
+  id: aa71d241-596e-4bef-8708-cddb118ec6bb
 colab:
   lando: 3.0.0-rc-12
   recipe: pantheon
