@@ -4,6 +4,15 @@
 	$about_biography = get_field('about_biography');
 	$front_gallery = get_field('front_gallery');
 	?>
+	
+	<section id="about" class="about">
+		<h2>About</h2>
+		<div class="wysiwyg">
+		<?php if ($about_biography): ?>
+			<?php echo $about_biography; ?>
+		<?php endif; ?>
+		</div>
+	</section>
 
 	<section id="gallery" class="gallery">
 		<?php if ($front_gallery): ?>
@@ -16,15 +25,6 @@
 				<?php endforeach; ?>
 			</ul>
 		<?php endif; ?>
-	</section>
-
-	<section id="about" class="about">
-		<h2>About</h2>
-		<div class="wysiwyg">
-		<?php if ($about_biography): ?>
-			<?php echo $about_biography; ?>
-		<?php endif; ?>
-		</div>
 	</section>
 
 	<section id="contact" class="contact">

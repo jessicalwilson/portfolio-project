@@ -29,10 +29,18 @@ tooling:
     service: node
     description: 'Runs npm commands'
     cmd: npm
+  prod:
+    service: node
+    description: '-- Runs production build of assets'
+    cmd: cd $LANDO_MOUNT/wp-content/themes/jessica/ && npm install && npm run prod
+  watch:
+    service: node
+    description: '-- Runs development build of assets and watch file changes'
+    cmd: cd $LANDO_MOUNT/wp-content/themes/jessica/ && npm install && npm run watch
   xwatch:
     service: node
     description: 'Runs gulp watch'
-    cmd: cd $LANDO_MOUNT/wp-contet/themes/example/ && npm run watch
+    cmd: cd $LANDO_MOUNT/wp-contet/themes/jessica/ && npm run watch
   yarn:
     service: node
     description: 'Runs yarn commands'
