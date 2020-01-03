@@ -7,6 +7,7 @@
 	
 	<section id="about" class="about">
 		<h2>About</h2>
+		<h1>test lando push</h1>
 		<div class="wysiwyg">
 		<?php if ($about_biography): ?>
 			<?php echo $about_biography; ?>
