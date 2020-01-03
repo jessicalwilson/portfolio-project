@@ -1,9 +1,9 @@
-name: miss-testerfield
+name: misstesterfield
 recipe: pantheon
 config:
   framework: wordpress
-  site: miss-testerfield
-  id: 8bb9664b-e7f5-42e7-9205-a295592c29f7
+  site: misstesterfield
+  id: edf8ce87-eba0-4985-aff9-3eba9d246cb7
 colab:
   lando: 3.0.0-rc-12
   recipe: pantheon
