@@ -1,9 +1,9 @@
-name: jessica-wilson-portfolio
+name: miss-testerfield
 recipe: pantheon
 config:
   framework: wordpress
-  site: jessica-wilson-portfolio
-  id: d57193b8-ba70-4027-ae4f-b3e48a357143
+  site: miss-testerfield
+  id: b5c55cd3-cf6a-4380-b95d-5671b8c1e57a
 colab:
   lando: 3.0.0-rc-12
   recipe: pantheon
@@ -11,23 +11,23 @@ colab:
   version: 1.0.1
 proxy:
   node:
-    - sync-jessica-wilson-portfolio.lndo.site:3000
+    - 'sync-jessica-wilson-portfolio.lndo.site:3000'
 services:
   node:
-    type: node:custom
+    type: 'node:custom'
     ssl: true
     overrides:
       ports:
-        - "3000"
-      image: colab/buildtools:node-8
+        - '3000'
+      image: 'colab/buildtools:node-8'
 tooling:
   gulp:
     service: node
-    description: 'Runs gulp commands'
+    description: Runs gulp commands
     cmd: gulp
   npm:
     service: node
-    description: 'Runs npm commands'
+    description: Runs npm commands
     cmd: npm
   prod:
     service: node
@@ -39,9 +39,9 @@ tooling:
     cmd: cd $LANDO_MOUNT/wp-content/themes/jessica/ && npm install && npm run watch
   xwatch:
     service: node
-    description: 'Runs gulp watch'
+    description: Runs gulp watch
     cmd: cd $LANDO_MOUNT/wp-contet/themes/jessica/ && npm run watch
   yarn:
     service: node
-    description: 'Runs yarn commands'
+    description: Runs yarn commands
     cmd: yarn
